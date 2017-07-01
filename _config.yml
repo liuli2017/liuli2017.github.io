@@ -1,68 +1,80 @@
-# Site settings
-title: liuli's blog
-author: liuli
-email:
-description: > # this means to ignore newlines until "baseurl:"
-  #Write an awesome description for your new site here. You can edit this
-  #line in _config.yml. It will appear in your document head meta (for
-  #Google search results) and in your feed.xml site description.
-  a similar man.
 
-# Site URL NOTE: if your site is base on subdir /blog you should change base to "/blog"
-domain: "http://liuli2017.github.io" # the domain URL for your site
-base: ""  # the relative path that different with domain so you can test locally
+##########################################
+#     Change these variables !important
+##########################################
 
-# Source URL NOTE: end with / cause it's [URL + FILE]
-w3c_url: "/w3c/"  # the base url of css js and images
-images_url: "/w3c/images/" # the base url of post images
-postfile: "/db/Postfile" # the Database
-sitefile: "/db/Sitefile" # the Database
+# Set this for Copyright in the footer
+owner: Name Surname
 
-# pagination
-page_size: 3
+# Optional quote in the footer
+# To disable set enable to false
+quote:
+  enable: true
+  quote: Some fancy quote
+  author: John Doe
 
-# comment settings
-duoshuo_short_name: "sbys" # the user of user.domain.com
-duoshuo_user_uid: "6324572809590735618" # the admin user uid
-duoshuo_user_name: "xk" # the admin user name
-duoshuo_max_depth: "2"  # the max_depth setting in duoshuo comments
+# Set this to your main site title. If page doesn't have its own title,
+# then this title will be used.
+title: Aliquam Theme
 
-# 3rd URL
-duoshuo_url: "/w3c/duoshuo/embed.min.js" # the local duoshuo comment plugin, you can change it to remote "http://static.duoshuo.com/"
-jquery_url: "http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js" # use cdn
-baiduTemplate_url: "/w3c/js/baiduTemplate.js" #use local
-google_analytics_id: ""
-baidu_tongji_id: ""
 
-# Build Settings
-excerpt_separator: "\n\n" # you can specify your own separator here, default is "\n\n" String
-permalink: /:year/:month/:day/:title.html
+# Following needed for disqus integration
+# Set your 'disqus' account name
+disqus:
+
+# Uncomment if deployed locally
+#url: https://localhost:4000
+
+# Set your host if deployed not locally
+# For example "https://yourGitHub.github.io"
+url:
+
+# Change this to your base URL starting with forward slash if site is in gh-pages branch
+# For example /branchName
+# NOTE! only change if site is NOT in master's branch
+baseurl:
+
+# Change this to your google analytics ID
+google_analytics:
+
+# Contact form pupublic key
+contact_PK:
+
+##########################################
+#          Optional variables
+##########################################
+
+# Set maximum posts per page
+paginate: 5
+
+# Set permalink
+permalink: /:categories/:title
+
+# MathJax support
+math: false
+
+collections:
+- definitions
+
+##########################################
+#          Do not change these variables
+##########################################
+
+include:
+  - _pages
+
+sass:
+  sass_dir: _sass
+sass:
+    style: compressed
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap # add /sitemap.xml file
+
+paginate_path: /_pages/page:num
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: true # a newline in markdown text would be changed to <br>
-gems:
-  - jemoji    # enable the github emoji
-version: 1.1.0
-
-# Following is got in Github Help With Configuring Jekyll
-
-# Github Page Default Settings which you can override:
-# kramdown:
-#   input: GFM
-#   hard_wrap: false
-# gems:
-#   - jekyll-coffeescript
-#   - jekyll-paginate
-
-# Github Page override the following settings which you cannot change:
-# lsi: false
-# safe: true
-# source: [your repo's top level directory]
-# incremental: false
-# highlighter: rouge
-# gist:
-#  noscript: false
-# kramdown:
-#  math_engine: mathjax

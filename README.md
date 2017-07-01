@@ -1,84 +1,78 @@
-# stepbystep  
-A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
 
-## Preview
-#### PC or Pad
-<img style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;" src="https://github.com/jokinkuang/stepbystep/raw/master/article.png"></img>
-#### Mobile
-<div style="box-shadow: 10px 10px 5px #888888;border: 1px solid black;">
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile.png"></img>
-<img style="width:50%;" src="https://github.com/jokinkuang/stepbystep/raw/master/mobile2.png"></img>
-</div>
+![aliquam rwd](/demo.jpg)
 
-## Features  
+# aliquam
 
-1. Compatible with PC iPad and Phone (RWD)
-2. Support blogger mood-talk(说说)
-3. Support post subdirs as post categories  
-  `_post/linux/nodejs/2016-9-1-About-Nodejs.md => linux and nodejs would merge into the post categories`
-4. Support pagination
-5. Support pinning posts
+Want example? [check this out](http://grrinchas.github.io/aliquam/)
 
-## What Must To Be Set!
-```
-title:         # your title
-author:        # your name
-email:         # your email
-description: > # your description
+Want real life example? [check this out](http://grrinchas.github.io/)
 
-domain: "http://yourdomain.github.io" # your domain
 
-page_size: 2   # your pagination page size
 
-duoshuo_short_name: "sbys"              # your duoshuo name xxx.duoshuo.com
-duoshuo_user_uid: "6324572809590735618" # your duoshuo user uid
-duoshuo_user_name: "xk"                 # your duoshuo user name
+## Table of Contents
 
-google_analytics_id: ""                 # your google analytics id
-baidu_tongji_id: ""                     # your baidu tongji id
-```
-*NOTE* **If you do NOT set the duoshuo short name, all comments would commit to this demo site !**
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [License](#license)
 
-## Install
-assume the github username is "hello" then:  
 
-1. create a repository named "hello.github.io"  
-2. clone this repository  
-  `git clone https://github.com/jokinkuang/stepbystep.git`  
-3. push the whole thing to your repo "hello.github.io"  
-  `git remote set-url origin https://github.com/hello/hello.github.io.git`  
-  `git push origin master`  
-4. browse "hello.github.io"  
 
-> if your github username is "world" then replace upper "hello" all to "world"  
+## <a name="features"></a>Features
 
-## Custom Domain  
-if you want to visit "www.hello.com" instead of "hello.github.io" then:  
+- [Disqus](https://disqus.com/) comment system
+- Google analytics
+- Pagination support
+- Custom tags and categories
+- SEO support
+- Contact form integration
+- MathJax support
 
-1. create a file named "CNAME" (the file is already exist)  
-2. buy the "www.hello.com" domain  
-3. add following to the "CNAME"  
-  `www.hello.com`  
-4. go to the Shop where your domain bought and set the Domain DNS to:  
-  | prefix | record-type |      host       |  
-  |   www  |   CNAME     | hello.github.io |  
-5. wait a long long time  
-6. browse "www.hello.com"
+## <a name="installation"></a>Installation
 
-## Custom Your Site  
-1. you need a [duoshuo](http://www.duoshuo.com) account  
-2. you need a [google-analytics](https://www.google.com/analytics/) account  
-3. all settings are in `_config.yml`
+#### Method 1: new master's repository (The Best)
 
-## Other  
-whoever use this theme please add your site to the [wiki](https://github.com/jokinkuang/stepbystep/wiki)  
+1. First [fork](https://github.com/grrinchas/aliquam/fork) it.
+2. Change your forked repository name _aliquam_ to __userName.github.io__ where
+   __userName__ is your github user name.
+3. Access your new blog via [https://username.github.io](https://username.github.io).
+4. [See configuration](#configuration).
 
-## Bugs
-see [Release](https://github.com/jokinkuang/stepbystep/releases)
+#### Method 2: gh-pages in existing repository
+1. Create a new branch called _gh-pages_ in the repository where you want to add a template [managing branches](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/).
+2. From command line run `git clone https://github.com/grrinchas/aliquam` - this will clone _aliquam_ template to your computer.
+3. Create new branch `git checkout -b gh-pages` where _gh-pages_ will be your branch name.
+4. Add remote, which is your repo from the first step, to your new branch `git remote add gh-pages https://github.com/<yourName>/<yourMaster>/gh-pages`. _yourName_ is your account name and _yourMaster_ is your repository.
+5. Push new branch to remote `git push gh-pages`.
+6. Update `_config.yml` file by changing `baseurl: "<branchName>"` _branchName_ is your branch name where _gh-pages_ resides. See [configuration](#configuration).
 
-## How It works  
-[English](http://www.jokinkuang.info/2016/09/03/stey-by-step-to-create-a-jekyll-theme.html)  
-[ 中文 ](http://www.jokinkuang.info/2016/09/03/how-to-create-the-jekyll-theme.html)
+#### Method 3: run it locally
 
-## License  
-Under The [MIT](https://tldrlegal.com/license/mit-license) License
+1. Download [zip](https://github.com/grrinchas/aliquam/archive/master.zip) or clone it `git clone https://github.com/grrinchas/aliquam`.
+2. Go inside folder and run `jekyll serve` or `bundle exec jekyll s`. This will build a website which you can access [https://localhost:4000](https://localhost:4000). You need to have [Jekyll](https://jekyllrb.com/docs/installation/) installed to do this.
+
+## <a name="configuration"></a>Configuration
+
+All configuration is done via `_config.yml` file which you will find in your main repo folder.
+
+- `url: "https://<yourName>.github.io"` - Change this to your domain (need for Disqus integration). !NOTE if running locally change this to `url: "https://localhost:4000"`.
+- `disqus: "<disqusName>"` - Your disqus name. First you have to create account with [Disqus](https://disqus.com/).
+- `owner: "<name surname>"` - Change this to your own name, need for copyright in the footer.
+- `title: "<title>"` and `subtitle: "<subtitle>"` Change to your preferred title/subtitle.
+- `baseurl: "/<branchName>"` - Change this to your branch name where _gh-pages_ resides. !NOTE apply only if you used __Method 2__ for installation.
+- `google_analytics: <your_ID>` - Change this to your google analytics ID.
+- `contact_PK: <yourPublicKey>` - Change this to your [http://getsimpleform.com](http://getsimpleform.com) public key.
+- `math: true` - set `false` to disable maths support. For more information check [MathJax](https://www.mathjax.org/).
+
+To get your public key:
+
+1. Got to [http://getsimpleform.com](http://getsimpleform.com).
+2. Enter your email and press `Send me a token`.
+3. Go to your email and copy your token `Your form api token is <token>`. !NOTE do not copy your private key.
+4. Paste this key to `contact_PK` in `_config.yml`.
+5. Every time when someone sends you a message you will receive a notification to your email.
+
+## <a name="license"></a>License
+
+This project is licensed under the MIT License - see [The MIT License (MIT)](https://opensource.org/licenses/MIT)
+for more details.
