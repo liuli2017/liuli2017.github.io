@@ -117,7 +117,8 @@ main {
 
 //---------------------------BACKGROUND
 .paginator {
-  background-color: $color-paginator;
+//  background-color: $color-paginator;
+  background-color: #fcfcfc;
 }
 
 //---------------------------BORDER
@@ -130,7 +131,7 @@ main {
 /*************************************************************************/
 
 //---------------------------FONT
-#footer-main > small,
+#footer-main div> small,
 .lineno {
   color: $color-paginator-darker;
 }

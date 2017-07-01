@@ -1,25 +1,18 @@
-{% if site.quote["enable"] %}
 <blockquote id="footer-quote">
-    <p>
-        {% if page.quote %}
-        {{ page.quote["quote"] }}
-        {% else %}
-        {{ site.quote["quote"] }}
-        {% endif %}
-    </p>
+    <p>分享知识，记录生活。</p>
     <footer>
-        <cite>
-        {% if page.quote %}
-        - {{ page.quote["author"] }}
-        {% else %}
-        - {{ site.quote["author"] }}
-        {% endif %}
-    </cite>
+        <cite></cite>
     </footer>
 </blockquote>
-{% endif %}
 <div id="footer-main">
-    <small>
-        &copy; 2016 {{ site.owner }}. ALL RIGHTS RESERVED.
-    </small>
+	<div>
+		<small>
+			&copy; 2017 {{ site.title }}. ALL RIGHTS RESERVED.
+		</small>
+	</div>
+	<div>
+		<small>
+			Powered by Jekyll.
+		</small>
+	</div>
 </div>

@@ -73,7 +73,6 @@ article,
   max-width: $media-query-med-2;
 }
 
-.paginator ul,
 #main-nav {
   max-width: $media-query-min * 0.5;
 }
@@ -106,6 +105,12 @@ main img,
 #main-nav li,
 .paginator li {
   position: relative;
+}
+.paginator li:first-child{
+	float:left;
+}
+.paginator li:last-child{
+	float:right;
 }
 
 //----------------------------ABSOLUTE

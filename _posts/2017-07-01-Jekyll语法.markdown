@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Jekyll语法"
+date:   2017-07-01 14:03:21 +0800
+categories: useful
+tag: Jekyll
+---
+具体官方文档地址请参考[官方文档](http://jekyll.com.cn/docs/variables/).
+
+##文件目录介绍
+_config.yml ：全局配置，比如网站的名字、网站的域名、 网站的链接格式等.
+
+_includes ：网站公共部分，比如：头部、底部、侧栏等。
+使用方式：{% highlight ruby linenos%}{ % include filename % \}{%endhighlight%}
+
+_layouts ：内容模板。在_posts文件中头部引用部分。
+
+_posts ：博客内容。
+
+_data ：全局变量。
+
+_site ：生成网站输出目录，一般需在.gitignore 中屏蔽掉这个目录。
+
+##模板语法
+
+
+
+
+
+

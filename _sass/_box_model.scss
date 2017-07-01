@@ -128,8 +128,7 @@ article > .blockquote,
 
 //---------------------------BASELINE-DOUBLE
 main {
-  padding-left: $l-h-baseline-double;
-  padding-right: $l-h-baseline-double;
+  padding: $l-h-baseline-double*3 $l-h-baseline-double;
 }
 
 /*************************************************************************
@@ -157,8 +156,8 @@ article {
 
 //---------------------------MISC
 .preview {
-  padding-top: $l-h-baseline * 3;
-  padding-bottom: $l-h-baseline * 3;
+  padding-top: $l-h-baseline;
+  padding-bottom: 0;
 }
 
 #main-nav li {

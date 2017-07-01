@@ -10,13 +10,6 @@
     display: inline-block;
   }
 
-  .sep {
-    display: block;
-  }
-
-  .paginator ul {
-    max-width: none;
-  }
   #main-nav {
     max-width: none;
     text-align: right;
@@ -31,9 +24,11 @@
     font-size: $f-s-tablet;
   }
   main {
-    padding: $l-h-baseline-double * 3 0;
+    padding: $l-h-baseline-double*3 0;
   }
-
+  .paginator ul {
+    max-width: $media-query-med-2;
+  }
 
 }
 
