@@ -1,0 +1,68 @@
+标题
+H1
+==============
+H2
+--------------
+
+# H1
+## H2
+
+# H1 #
+## H2 ##
+
+区块
+> This is the first level of quoting. 
+> > > This is nested blockquote.
+> > Back to the first level.
+
+无序列表
++ red
++ green
++ blue
+
+* Red 
+* Green 
+* Blue
+
+- Red 
+- Green 
+- Blue
+
+有序列表
+1. Bird 
+2. McHale 
+3. Parish
+
+分隔线
+* * * 
+*** 
+***** 
+- - - 
+---------------------------------------
+
+行内链接
+This is [an example](http://example.com/ "Title") inline link.
+
+参考链接
+This is [an example][id] reference-style link.
+[id]: http://example.com/ "Optional Title Here"
+
+强调
+*single asterisks* 
+_single underscores_ 
+**double asterisks** 
+__double underscores__
+
+代码
+Use the `printf()` function.
+
+行内图片
+![Alt text](https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title")
+
+参考式图片
+![Alt text][id]
+[id]: https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title attribute"
+
+链接和邮箱
+<http://example.com/>
+<address@example.com>
