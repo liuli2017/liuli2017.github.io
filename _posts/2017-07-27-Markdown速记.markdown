@@ -84,9 +84,9 @@ console.log()
 ![Alt text](https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title")
 
 参考式图片
-![Alt text][id]
+![Alt text][imgpath]
 
-[id]:https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title attribute"
+[imgpath]:https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title attribute"
 
 链接和邮箱
 <http://example.com/>
