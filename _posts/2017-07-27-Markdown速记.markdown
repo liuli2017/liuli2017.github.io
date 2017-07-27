@@ -6,8 +6,10 @@ categories: useful
 tag: Markdown
 ---
 标题
+
 H1
 ==============
+
 H2
 --------------
 
@@ -20,7 +22,8 @@ H2
 区块
 > This is the first level of quoting. 
 > > > This is nested blockquote.
-> > Back to the first level.
+>
+> Back to the first level.
 
 无序列表
 + red
@@ -51,8 +54,17 @@ H2
 This is [an example](http://example.com/ "Title") inline link.
 
 参考链接
-This is [an example][id] reference-style link.
-[id]: http://example.com/ "Optional Title Here"
+我经常的网站[Google][id]和[自己的博客][]。
+
+[id]:http://www.google.com "Google"
+[自己的博客]:https://liuli2017.github.io/ "github博客"
+
+表格
+
+|tablehead | col 1 | col 2|
+|--------------|:--------:|-------:|
+|row           | name| age    |
+|row           | adc   | def     |
 
 强调
 *single asterisks* 
@@ -62,12 +74,18 @@ __double underscores__
 
 代码
 Use the `printf()` function.
+```
+<code>
+console.log()
+</code>
+```
 
 行内图片
 ![Alt text](https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title")
 
 参考式图片
 ![Alt text][id]
+
 [id]: https://avatars3.githubusercontent.com/u/29459994?v=4&s=40 "Optional title attribute"
 
 链接和邮箱
